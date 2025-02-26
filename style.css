@@ -195,11 +195,13 @@ form {
     position: relative;
     z-index: 1;
     max-width: 800px;
+    background: #000000;
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
   label {
     display: block;
@@ -208,14 +210,32 @@ form {
   }
 
   #title{
-    color: black;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+
   }
 
-  textarea{
+  textarea {
+    height: 120px; /* Increases the height of the comment box */
+    width: 250px;
+    resize: vertical; /* Allows users to resize the textarea */
+}
 
-    size: 200%;
+  #survey-form{
+    color: white;
+    text-align: center;
+    line-height: 2;
+
   }
-
+  input, textarea {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
 
 @media only screen and (min-width: 768px) {
     .wilson-logo {
